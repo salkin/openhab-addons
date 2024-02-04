@@ -35,7 +35,7 @@ import org.openhab.binding.connectedcar.internal.api.carnet.BrandCarNetSkoda;
 import org.openhab.binding.connectedcar.internal.handler.ThingHandlerInterface;
 
 /**
- * {@link BrandSkodaE} provides the Brand interface for Škoda Enyak
+ * {@link BrandSkodaE} provides the Brand interface for Škoda Enyaq
  *
  * @author Markus Michels - Initial contribution
  * @author Thomas Knaller - Maintainer

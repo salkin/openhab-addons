@@ -35,17 +35,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The {@link EnyakVehicleHandler} implements the Vehicle Handler for Škoda Enyak
+ * The {@link EnyaqVehicleHandler} implements the Vehicle Handler for Škoda Enyaq
  *
  * @author Markus Michels - Initial contribution
  * @author Thomas Knaller - Maintainer
  * @author Dr. Yves Kreis - Maintainer
  */
 @NonNullByDefault
-public class EnyakVehicleHandler extends ThingBaseHandler {
-    private final Logger logger = LoggerFactory.getLogger(EnyakVehicleHandler.class);
+public class EnyaqVehicleHandler extends ThingBaseHandler {
+    private final Logger logger = LoggerFactory.getLogger(EnyaqVehicleHandler.class);
 
-    public EnyakVehicleHandler(Thing thing, TextResources resources, ZoneId zoneId, ChannelDefinitions idMapper,
+    public EnyaqVehicleHandler(Thing thing, TextResources resources, ZoneId zoneId, ChannelDefinitions idMapper,
             CarChannelTypeProvider channelTypeProvider) throws ApiException {
         super(thing, resources, zoneId, idMapper, channelTypeProvider);
     }

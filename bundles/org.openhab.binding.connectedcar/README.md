@@ -32,7 +32,7 @@ Make sure to select the correct type of Account Think (e.g. select Škoda Electr
 ## CarNet: VW, Škoda, SEAT
 
 VW has a special API for the ID. models - WeConnect ID., check below for more information.
-Škoda has a special API for the Enyak, see below.
+Škoda has a special API for the Enyaq, see below.
 
 Some verified vehicles:
 

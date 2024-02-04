@@ -38,7 +38,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The {@link FPServiceStatus} implements the Status Service for Škoda Enyak.
+ * The {@link FPServiceStatus} implements the Status Service for Škoda Enyaq.
  *
  * @author Markus Michels - Initial contribution
  * @author Thomas Knaller - Maintainer

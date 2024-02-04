@@ -56,7 +56,7 @@ public class BindingConstants {
     public static final ThingTypeUID THING_TYPE_VWID = new ThingTypeUID(BINDING_ID, THING_VWID);
     public static final ThingTypeUID THING_TYPE_SKODA = new ThingTypeUID(BINDING_ID, THING_SKODA);
     public static final ThingTypeUID THING_TYPE_SEAT = new ThingTypeUID(BINDING_ID, THING_SEAT);
-    public static final ThingTypeUID THING_TYPE_ENYAK = new ThingTypeUID(BINDING_ID, THING_SKODA_E);
+    public static final ThingTypeUID THING_TYPE_ENYAQ = new ThingTypeUID(BINDING_ID, THING_SKODA_E);
     public static final ThingTypeUID THING_TYPE_FORD = new ThingTypeUID(BINDING_ID, THING_FORD);
     public static final ThingTypeUID THING_TYPE_WECHARGE = new ThingTypeUID(BINDING_ID, THING_WECHARGE);
 
@@ -67,7 +67,7 @@ public class BindingConstants {
     public static final ThingTypeUID THING_TYPE_FORDVEHICLE = new ThingTypeUID(BINDING_ID, "fordvehicle");
 
     public static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Set.of(THING_TYPE_MYAUDI, THING_TYPE_VW,
-            THING_TYPE_SKODA, THING_TYPE_SEAT, THING_TYPE_CNVEHICLE, THING_TYPE_ENYAK, THING_TYPE_SKODAEVEHICLE,
+            THING_TYPE_SKODA, THING_TYPE_SEAT, THING_TYPE_CNVEHICLE, THING_TYPE_ENYAQ, THING_TYPE_SKODAEVEHICLE,
             THING_TYPE_FORD, THING_TYPE_FORDVEHICLE, THING_TYPE_VWID, THING_TYPE_IDVEHICLE, THING_TYPE_WECHARGE,
             THING_TYPE_WCWALLBOX);
 

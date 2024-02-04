@@ -45,7 +45,7 @@ import org.openhab.core.types.State;
 import org.openhab.core.types.UnDefType;
 
 /**
- * The {@link SEServiceStatus} implements the Status Service for Škoda Enyak.
+ * The {@link SEServiceStatus} implements the Status Service for Škoda Enyaq.
  *
  * @author Markus Michels - Initial contribution
  * @author Thomas Knaller - Maintainer

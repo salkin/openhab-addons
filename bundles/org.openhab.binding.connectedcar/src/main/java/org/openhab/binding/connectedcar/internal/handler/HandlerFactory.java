@@ -86,7 +86,7 @@ public class HandlerFactory extends BaseThingHandlerFactory {
         try {
             if (THING_TYPE_MYAUDI.equals(thingTypeUID) || THING_TYPE_VW.equals(thingTypeUID)
                     || THING_TYPE_VWID.equals(thingTypeUID) || THING_TYPE_SKODA.equals(thingTypeUID)
-                    || THING_TYPE_ENYAK.equals(thingTypeUID) || THING_TYPE_SEAT.equals(thingTypeUID)
+                    || THING_TYPE_ENYAQ.equals(thingTypeUID) || THING_TYPE_SEAT.equals(thingTypeUID)
                     || THING_TYPE_FORD.equals(thingTypeUID) || THING_TYPE_WECHARGE.equals(thingTypeUID)) {
                 AccountHandler handler = new AccountHandler((Bridge) thing, resources, tokenManager);
                 registerDeviceDiscoveryService(handler);
@@ -96,7 +96,7 @@ public class HandlerFactory extends BaseThingHandlerFactory {
             } else if (THING_TYPE_IDVEHICLE.equals(thingTypeUID)) {
                 return new WeConnectVehicleHandler(thing, resources, zoneId, channelIdMapper, channelTypeProvider);
             } else if (THING_TYPE_SKODAEVEHICLE.equals(thingTypeUID)) {
-                return new EnyakVehicleHandler(thing, resources, zoneId, channelIdMapper, channelTypeProvider);
+                return new EnyaqVehicleHandler(thing, resources, zoneId, channelIdMapper, channelTypeProvider);
             } else if (THING_TYPE_FORDVEHICLE.equals(thingTypeUID)) {
                 return new FordVehicleHandler(thing, resources, zoneId, channelIdMapper, channelTypeProvider);
             } else if (THING_TYPE_WCWALLBOX.equals(thingTypeUID)) {
