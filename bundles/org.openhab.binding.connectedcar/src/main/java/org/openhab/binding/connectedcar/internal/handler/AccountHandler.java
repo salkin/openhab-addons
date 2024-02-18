@@ -38,13 +38,13 @@ import org.openhab.binding.connectedcar.internal.api.ApiException;
 import org.openhab.binding.connectedcar.internal.api.ApiHttpClient;
 import org.openhab.binding.connectedcar.internal.api.BrandNull;
 import org.openhab.binding.connectedcar.internal.api.IdentityManager;
+import org.openhab.binding.connectedcar.internal.api.carnet.BrandCarNetAudi;
 import org.openhab.binding.connectedcar.internal.api.carnet.BrandCarNetSeat;
 import org.openhab.binding.connectedcar.internal.api.carnet.BrandCarNetSkoda;
 import org.openhab.binding.connectedcar.internal.api.carnet.BrandCarNetVW;
 import org.openhab.binding.connectedcar.internal.api.fordpass.BrandFordPass;
 import org.openhab.binding.connectedcar.internal.api.skodae.BrandSkodaE;
 import org.openhab.binding.connectedcar.internal.api.wecharge.BrandWeCharge;
-import org.openhab.binding.connectedcar.internal.api.weconnect.BrandWeConnectAudi;
 import org.openhab.binding.connectedcar.internal.api.weconnect.BrandWeConnectVW;
 import org.openhab.binding.connectedcar.internal.config.AccountConfiguration;
 import org.openhab.binding.connectedcar.internal.config.CombinedConfig;
@@ -247,7 +247,8 @@ public class AccountHandler extends BaseBridgeHandler implements ThingHandlerInt
         api.setConfig(config);
         switch (config.account.brand) {
             case API_BRAND_AUDI:
-                return new BrandWeConnectAudi(this, httpClient, tokenManager, apiListener);
+                // return new BrandWeConnectAudi(this, httpClient, tokenManager, apiListener);
+                return new BrandCarNetAudi(this, httpClient, tokenManager, apiListener);
             case API_BRAND_VW:
                 return new BrandCarNetVW(this, httpClient, tokenManager, apiListener);
             case API_BRAND_VWID:
