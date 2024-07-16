@@ -73,7 +73,7 @@ public class BrandWeConnectAudi extends WeConnectApi implements BrandAuthenticat
         properties.authScope = "address badge birthdate birthplace email gallery mbb name nationalIdentifier nationality nickname phone picture profession profile vin openid";
         properties.redirect_uri = "myaudi:///";
         properties.responseType = "code";
-        properties.xappVersion = "3.22.0";
+        properties.xappVersion = "4.25.0";
         properties.xappName = "myAudi";
     }
 

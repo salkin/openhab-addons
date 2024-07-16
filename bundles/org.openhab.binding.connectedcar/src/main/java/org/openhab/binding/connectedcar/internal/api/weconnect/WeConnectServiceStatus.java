@@ -156,6 +156,7 @@ public class WeConnectServiceStatus extends ApiBaseService {
         api.setConfig(this.getConfig());
         api.getHttp().setConfig(this.getConfig());
         VehicleStatus data = api.getVehicleStatus();
+        logger.debug("Vechicle data: {}", data);
         WCVehicleStatusData status = data.wcStatus;
         if (status != null) {
             logger.debug("{}: Vehicle Status:\n{}", thingId, status);
@@ -202,15 +203,15 @@ public class WeConnectServiceStatus extends ApiBaseService {
                         getStringType(status.charging.chargingStatus.value.chargingState));
                 updated |= updateChannel(CHANNEL_CHARGER_MODE,
                         getStringType(status.charging.chargingStatus.value.chargeMode));
-                updated |= updateChannel(CHANNEL_CHARGER_REMAINING,
+                updated |= updateChannel(CHANNEL_GROUP_CHARGER, CHANNEL_CHARGER_REMAINING,
                         getDecimal(status.charging.chargingStatus.value.remainingChargingTimeToComplete_min));
-                updated |= updateChannel(CHANNEL_CHARGER_POWER,
+                updated |= updateChannel(CHANNEL_GROUP_CHARGER, CHANNEL_CHARGER_POWER,
                         getDecimal(status.charging.chargingStatus.value.chargePower_kW));
-                updated |= updateChannel(CHANNEL_CHARGER_RATE,
+                updated |= updateChannel(CHANNEL_GROUP_CHARGER, CHANNEL_CHARGER_RATE,
                         getDecimal(status.charging.chargingStatus.value.chargeRate_kmph));
             }
             if (status.charging.chargingSettings != null && status.charging.chargingSettings.value != null) {
-                updated |= updateChannel(CHANNEL_CONTROL_TARGETCHG,
+                updated |= updateChannel(CHANNEL_GROUP_CHARGER, CHANNEL_CONTROL_TARGETCHG,
                         getDecimal(status.charging.chargingSettings.value.targetSOC_pct));
                 String maxCurrent = getString(status.charging.chargingSettings.value.maxChargeCurrentAC);
                 if ("maximum".equalsIgnoreCase(maxCurrent)) {
